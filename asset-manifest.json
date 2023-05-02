@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.ecbb91fc.js",
-    "index.html": "/index.html",
-    "main.ecbb91fc.js.map": "/static/js/main.ecbb91fc.js.map"
+    "main.js": "/rolodex/static/js/main.ecbb91fc.js",
+    "index.html": "/rolodex/index.html",
+    "main.ecbb91fc.js.map": "/rolodex/static/js/main.ecbb91fc.js.map"
   },
   "entrypoints": [
     "static/js/main.ecbb91fc.js"
