@@ -16,7 +16,7 @@ export default function Shelf() {
         p: theme.spacing(0.25),
       }}
     >
-      <img src={require("./rolodex.jpg")} alt="logo" style={{ height: 50 }} />
+      <img src={require("../assets/rolodex.jpg")} alt="logo" style={{ height: 50 }} />
     </Paper>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useAppSelector } from "./state/hooks";
 import Shelf from "./components/Shelf";
-import User from "./components/User";
+import User from "./components/User/User";
 import Shoebox from "./components/Shoebox";
 import { Divider } from "@mui/material";
 

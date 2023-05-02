@@ -1,8 +1,8 @@
 import React from "react";
-import { useAppDispatch, useAppSelector } from "../state/hooks";
+import { useAppDispatch, useAppSelector } from "../../state/hooks";
 import { Backdrop, Button, CircularProgress } from "@mui/material";
-import PokemonCard from "./User/PokemonCard";
-import { getRandomUserAsync } from "../state/slices/userSlice";
+import PokemonCard from "./PokemonCard";
+import { getRandomUserAsync } from "../../state/slices/userSlice";
 
 export default function User() {
   const dispatch = useAppDispatch();
