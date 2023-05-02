@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/rolodex/static/js/main.ecbb91fc.js",
+    "main.js": "/rolodex/static/js/main.a211f36d.js",
     "index.html": "/rolodex/index.html",
-    "main.ecbb91fc.js.map": "/rolodex/static/js/main.ecbb91fc.js.map"
+    "main.a211f36d.js.map": "/rolodex/static/js/main.a211f36d.js.map"
   },
   "entrypoints": [
-    "static/js/main.ecbb91fc.js"
+    "static/js/main.a211f36d.js"
   ]
 }
