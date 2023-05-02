@@ -1,26 +1,35 @@
 import React from "react";
 
 import { Api } from "./services/Api";
+import { useAppDispatch, useAppSelector } from "./state/hooks";
+import { getRandomUserAsync } from "./state/slices/userSlice";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Appframe from "./Appframe";
+import theme from "./assets/theme";
 
 function App() {
-  const api = new Api();
-
-  const [user, setUser] = React.useState<any>(null);
-
-  async function now() {
-    try {
-      const response = await api.getRandomUser();
-      setUser(response.results);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
+  const dispatch = useAppDispatch();
   React.useEffect(() => {
-    now();
+    dispatch(getRandomUserAsync());
   }, []);
 
-  return <div>{JSON.stringify(user)}</div>;
+  return (
+    <>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Appframe />
+        </div>
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;
