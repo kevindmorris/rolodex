@@ -9,7 +9,7 @@ export default function Shelf() {
       variant="outlined"
       sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
     >
-      <img src={"./rolodex-logo.png"} alt="rolodex" style={{ height: 55 }} />
+      <img src="../../rolodex-logo.png" alt="logo" />
     </Paper>
   );
 }
