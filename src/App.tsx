@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Api } from "./services/Api";
-import { useAppDispatch, useAppSelector } from "./state/hooks";
+import { useAppDispatch } from "./state/hooks";
 import { getRandomUserAsync } from "./state/slices/userSlice";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Appframe from "./Appframe";
@@ -9,6 +8,7 @@ import theme from "./assets/theme";
 
 function App() {
   const dispatch = useAppDispatch();
+
   React.useEffect(() => {
     dispatch(getRandomUserAsync());
   }, []);

@@ -1,14 +1,11 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import type { RootState } from "../store";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Api } from "../../services/Api";
 
-// Define a type for the slice state
 interface UserState {
   status: { user: "idle" | "pending" | "succeeded" | "failed" };
   user: any;
 }
 
-// Define the initial state using that type
 const initialState: UserState = {
   status: { user: "idle" },
   user: null,
@@ -16,7 +13,6 @@ const initialState: UserState = {
 
 const api = new Api();
 
-// First, create the thunk
 export const getRandomUserAsync = createAsyncThunk(
   "users/getRandomUser",
   async () => {
@@ -27,7 +23,6 @@ export const getRandomUserAsync = createAsyncThunk(
 
 export const userSlice = createSlice({
   name: "user",
-  // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {},
   extraReducers: (builder) => {

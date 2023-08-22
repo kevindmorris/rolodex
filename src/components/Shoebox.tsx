@@ -1,6 +1,5 @@
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import { Link, Paper, Stack, Typography, useTheme } from "@mui/material";
-import React from "react";
 
 export default function Shoebox() {
   const theme = useTheme();

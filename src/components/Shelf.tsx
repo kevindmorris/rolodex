@@ -1,6 +1,4 @@
-import { People } from "@mui/icons-material";
-import { AppBar, Paper, Typography, useTheme } from "@mui/material";
-import React from "react";
+import { Paper, useTheme } from "@mui/material";
 
 export default function Shelf() {
   const theme = useTheme();
@@ -16,7 +14,11 @@ export default function Shelf() {
         p: theme.spacing(0.25),
       }}
     >
-      <img src={require("../assets/rolodex.jpg")} alt="logo" style={{ height: 50 }} />
+      <img
+        src={process.env.PUBLIC_URL + "/images/rolodex.jpg"}
+        alt="logo"
+        style={{ height: 50 }}
+      />
     </Paper>
   );
 }

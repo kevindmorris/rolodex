@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppDispatch, useAppSelector } from "../../state/hooks";
 import { Backdrop, Button, CircularProgress } from "@mui/material";
 import PokemonCard from "./PokemonCard";

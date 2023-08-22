@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppSelector } from "../../state/hooks";
 import { Avatar, Paper, Typography, alpha, useTheme } from "@mui/material";
 
