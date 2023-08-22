@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.js": "/rolodex/static/js/main.6c3935d7.js",
-    "static/media/rolodex.jpg": "/rolodex/static/media/rolodex.2b70dcbb291365291e14.jpg",
+    "main.js": "/rolodex/static/js/main.be3b3eba.js",
     "index.html": "/rolodex/index.html",
-    "main.6c3935d7.js.map": "/rolodex/static/js/main.6c3935d7.js.map"
+    "main.be3b3eba.js.map": "/rolodex/static/js/main.be3b3eba.js.map"
   },
   "entrypoints": [
-    "static/js/main.6c3935d7.js"
+    "static/js/main.be3b3eba.js"
   ]
 }
